@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<body>
+const express = require('express')
+const app = express()
+const port = 3000
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+app.get('/', (req, res) => res.send('Hello World!'))
 
-</body>
-</html>
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
