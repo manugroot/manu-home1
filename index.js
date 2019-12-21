@@ -8,8 +8,8 @@ app.get('/', (req, res) => res.sendFile(__dirname + '/public/htmls/index.html'))
 
 var obj={}
 obj.name = "R.Manish Reddy";
-obj.college = "CMRCET";
-obj.regno = "17h51a04g6";
+obj.clg = "CMRCET";
+obj.rengno = "17h51a04g6";
 
 app.get('/data', (req, res) => res.json(obj))
 
